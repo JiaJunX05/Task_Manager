@@ -24,7 +24,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             return redirect()->route('dashboard')->with('success', 'You are logged in successfully');
         } else {
-            return redirect()->route('login')->withErrors(['error' => 'Invalid email or password']);
+            return redirect()->back()->withErrors(['error' => 'Invalid email or password']);
         }
     }
 
@@ -48,7 +48,7 @@ class AuthController extends Controller
         if ($user) {
             return redirect()->route('login')->with('success', 'Registration successful. Please login.');
         } else {
-            return redirect()->route('register')->withErrors(['error' => 'Registration failed. Please try again.']);
+            return redirect()->back()->withErrors(['error' => 'Registration failed. Please try again.']);
         }
     }
 
