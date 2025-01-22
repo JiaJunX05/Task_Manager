@@ -17,9 +17,9 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome to User Panel</h1>
-        <p class="lead text-muted">Manage your products here.</p>
-    </div> 
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to Task Tracker</h1>
+        <p class="lead text-muted">Track your tasks and stay on top of your to-dos.</p>
+    </div>    
     
     <!-- Task Table -->
     <div class="table-responsive shadow-sm rounded-3">
